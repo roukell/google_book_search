@@ -1,6 +1,14 @@
 import React from "react";
 
 // This file exports the Input, TextArea, and FormBtn components
+export function Instruction() {
+  return (
+    <>
+     <h2>Book Search</h2>
+     <p>Book</p>
+    </>
+  );
+}
 
 export function Input(props) {
   return (
