@@ -5,7 +5,8 @@ import API from "../utils/API";
 import { Link } from "react-router-dom";
 import { Col, Row, Container } from "../components/Grid";
 import { List, ListItem } from "../components/List";
-import { Input, TextArea, FormBtn, Instruction } from "../components/Form";
+import { Input, FormBtn, Instruction } from "../components/Form";
+// import BookAPI from "../utils/BookAPI";
 
 function Books() {
   // Setting our component's initial state
@@ -76,8 +77,7 @@ function Books() {
                 Search
               </FormBtn>
             </form>
-          </Col>
-          <Col size="md-6 sm-12">
+          
             <Jumbotron>
               <h1>Books On My List</h1>
             </Jumbotron>
@@ -98,8 +98,10 @@ function Books() {
               <h3>No Results to Display</h3>
             )}
           </Col>
+       
         </Row>
       </Container>
+      
     );
   }
 
