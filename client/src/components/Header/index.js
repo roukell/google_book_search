@@ -1,7 +1,7 @@
 import React from "react";
 import { Jumbotron, Container } from "react-bootstrap";
 
-function Header() {
+const Header = () => {
     return (
         <Jumbotron fluid>
             <Container>
