@@ -1,35 +1,28 @@
 import React from "react";
+import { Form, Button } from "react-bootstrap";
 
-// This file exports the Input, TextArea, and FormBtn components
-export function Instruction() {
-  return (
-    <>
-     <h2>Book Search</h2>
-     <p>Book</p>
-    </>
-  );
+const searchForm = props => {
+return (
+  <div className="container">
+  <Form>
+    <Form.Group>
+      <Form.Label><h2>Search for and save Books of Interest</h2></Form.Label>
+      <input
+        onChange={props.handleInputChange}
+        value={props.search}
+        name="search"
+        type="text"
+        className="form-control"
+        placeholder="Search a Book"
+        id="search"
+      />
+      <Button onClick={props.handleFormSubmit} className="btn btn-dark mt-3 mb-5">
+        Search
+        </Button>
+    </Form.Group>
+  </Form>
+  </div>
+);
 }
 
-export function Input(props) {
-  return (
-    <div className="form-group">
-      <input className="form-control" {...props} />
-    </div>
-  );
-}
-
-export function TextArea(props) {
-  return (
-    <div className="form-group">
-      <textarea className="form-control" rows="20" {...props} />
-    </div>
-  );
-}
-
-export function FormBtn(props) {
-  return (
-    <button {...props} style={{ float: "right", marginBottom: 10 }} className="btn btn-success">
-      {props.children}
-    </button>
-  );
-}
+export default searchForm;
