@@ -3,7 +3,6 @@ import Jumbotron from "../components/Jumbotron";
 import Card from "../components/Card";
 import Form from "../components/Form";
 import Book from "../components/Book";
-import Footer from "../components/Footer";
 import API from "../utils/API";
 import { Col, Row, Container } from "../components/Grid";
 import { List } from "../components/List";
@@ -75,12 +74,12 @@ class Home extends Component {
 
   render() {
     return (
-      <Container>
+      <Container >
         <Row>
           <Col size="md-12">
             <Jumbotron>
               <h1 className="text-center">
-                <strong>(React) Google Books Search</strong>
+                <strong>Google Books Search</strong>
               </h1>
               <h2 className="text-center">Search for and Save Books of Interest.</h2>
             </Jumbotron>
@@ -121,12 +120,11 @@ class Home extends Component {
                   ))}
                 </List>
               ) : (
-                <h2 className="text-center">{this.state.message}</h2>
+                <h2 className="text-center" style={{padding:'25px'}}>{this.state.message}</h2>
               )}
             </Card>
           </Col>
         </Row>
-        <Footer />
       </Container>
     );
   }

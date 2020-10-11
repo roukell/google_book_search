@@ -2,12 +2,9 @@ import React from "react";
 
 function Footer() {
   return (
-    <footer>
-      <hr />
-      <p className="pull-right">
-        <i className="fab fa-github" /> Proudly built using React.js
-      </p>
-    </footer>
+    <div className="card-footer text-muted bg-dark text-white d-flex justify-content-center">
+    Google Book Search App is built using React
+   </div>
   );
 }
 

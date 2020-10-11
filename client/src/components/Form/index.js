@@ -3,7 +3,7 @@ import React from "react";
 function Form({ q, handleInputChange, handleFormSubmit }) {
   return (
     <form>
-      <div className="form-group">
+      <div className="form-group p-3 mb-2 bg-dark text-white">
         <label htmlFor="Query">
           <strong>Book</strong>
         </label>
@@ -12,7 +12,7 @@ function Form({ q, handleInputChange, handleFormSubmit }) {
           id="Title"
           type="text"
           value={q}
-          placeholder="Ready Player One"
+          placeholder="Search books here"
           name="q"
           onChange={handleInputChange}
           required
