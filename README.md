@@ -1,6 +1,6 @@
 
   # Google Books Search
-  ![License](https://img.shields.io/github/license/roukell/google_book_search)
+  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
   ## Preview
   ![img](./image/preview.png)
