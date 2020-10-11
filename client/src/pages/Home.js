@@ -17,17 +17,17 @@ class Home extends Component {
 
   handleInputChange = event => {
     const { name, value } = event.target;
-    console.log({
-      [ name ] : value
-    })
+    // console.log({
+    //   [ name ] : value
+    // })
     this.setState({
       [ name ] : value
     });
   };
 
-  getBooks = q => {
+   getBooks = q => {
     // console.log(q)
-    API.getBooks(q)
+     API.getBooks(q)
       .then(res => 
         // console.log({ books: res.data.items })
           this.setState({ books: res.data.items })
@@ -43,22 +43,34 @@ class Home extends Component {
 
   handleFormSubmit = event => {
     event.preventDefault();
-    console.log(this.state.q);
+    // console.log(this.state.q);
     this.getBooks(this.state.q);
   };
 
   handleBookSave = id => {
+    // find the book with id
     const book = this.state.books.find(book => book.id === id);
-    console.log(book)
-    // API.saveBook({
-    //   googleId: book.id,
-    //   title: book.volumeInfo.title,
-    //   subtitle: book.volumeInfo.subtitle,
-    //   link: book.volumeInfo.infoLink,
-    //   authors: book.volumeInfo.authors,
-    //   description: book.volumeInfo.description,
-    //   image: book.volumeInfo.imageLinks.thumbnail
-    // }).then(() => this.getBooks());
+    // find all books in this.state.books
+    const booksArray = this.state.books;
+    // find the index of the saved book
+    const index = booksArray.indexOf(book);
+    // remove saved book from the booksArray and setState
+    if (index > -1) { booksArray.splice(index, 1);
+      this.setState({
+        books: booksArray
+      })
+     }
+
+    // call API and save the book to backend
+    API.saveBook({
+      googleId: book.id,
+      title: book.volumeInfo.title,
+      subtitle: book.volumeInfo.subtitle,
+      link: book.volumeInfo.infoLink,
+      authors: book.volumeInfo.authors,
+      description: book.volumeInfo.description,
+      image: book.volumeInfo.imageLinks.thumbnail
+    })
   };
 
   render() {
