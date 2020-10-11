@@ -8,7 +8,7 @@
   ## Description
   * Google Books Search is an application that allows users to search books, view book details on Google Books via external link, and save the interested books for future reference.
 
-  * Deployed application: 
+  * Deployed application: https://pure-sands-91326.herokuapp.com/
 
   ## Table of Contents
   * [Installation](#installation)
