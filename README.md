@@ -27,6 +27,7 @@
   To use this app directly, click on the Heroku link: https://pure-sands-91326.herokuapp.com/
 
   1. Type in a book title in search field, and click search.
+  * Please note: this application only supports search by 'book title'.
   2. Results will display below search field. 
   3. Click VIEW to review details on Google Books.
   4. To save books, click save.
