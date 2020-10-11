@@ -24,7 +24,7 @@
       npm i
 
   ## Usage
-  To use this app directly, click on the Heroku link under [Description](#Description). 
+  To use this app directly, click on the Heroku link: https://pure-sands-91326.herokuapp.com/
 
   1. Type in a book title in search field, and click search.
   2. Results will display below search field. 
