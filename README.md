@@ -30,9 +30,9 @@
   * Please note: this application only supports search by 'book title'.
   2. Results will display below search field. 
   3. Click VIEW to review details on Google Books.
-  4. To save books, click save.
-  5. To view saved books, goto Saved in navbar.
-  6. To delete books, click delete.
+  4. To save books, click SAVE.
+  5. To view saved books, goto SAVED in navbar.
+  6. To delete books, click DELETE.
 
   Enjoy!
 
