@@ -22,7 +22,8 @@ function Form({ q, handleInputChange, handleFormSubmit }) {
         <button
           onClick={handleFormSubmit}
           type="submit"
-          className="btn btn-lg btn-danger float-right"
+          className="btn btn-lg btn-info float-right"
+          style={{margin: "16px"}}
         >
           Search
         </button>
