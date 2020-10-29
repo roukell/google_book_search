@@ -6,12 +6,14 @@
   ![img](./image/preview.png)
 
   ## Description
-  ![img](./image/mern.jpeg)
-  * Google Books Search is a MERN application that allows users to search books, view book details on Google Books via external link, and save the interested books for future reference.
-  
-  * Technologies used: HTML, CSS, JavaScript, Node.js, Express, MongoDB, Mongoose, React, Heroku, axios, React router DOM, Google Books API, Bootstrap.
+  ![img](./image/mern.jpeg)  
+  Google Books Search is a MERN application that allows users to search books, view book details on Google Books via external link, and save the interested books for future reference.
 
-  * Deployed application: https://pure-sands-91326.herokuapp.com/
+  ## Deployed application
+  https://pure-sands-91326.herokuapp.com/
+  
+  ## Technologies used
+  HTML, CSS, JavaScript, Node.js, Express, MongoDB, Mongoose, React, Heroku, axios, React router DOM, Google Books API, Bootstrap.
 
   ## Table of Contents
   * [Installation](#installation)
